@@ -13,9 +13,10 @@ import { RouterLink } from '@angular/router';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
+  // get users from api and store in a variable users
   users: Observable<User[]> = this.userService.getUsers();
   constructor(private userService: UserService) {}
-
+  // when clicked by enduser should retrive the user ID
   getUserInfo(id: number) {
     this.userService.getUserInfoAndEmit(id);
   }

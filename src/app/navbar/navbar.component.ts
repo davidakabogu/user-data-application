@@ -7,12 +7,13 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterLink],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {
+  // create array of paths to be displayed in nav bar component.
   links: any = [
     { path: 'home', label: 'Home' },
-    { path: 'users', label: 'User List' }
-
-  ]
+    { path: 'users', label: 'User List' },
+    // add more as necessary
+  ];
 }

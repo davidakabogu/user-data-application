@@ -1,10 +1,7 @@
-// geo.interface.ts
 interface Geo {
   lat: string;
   lng: string;
 }
-
-// address.interface.ts
 interface Address {
   street: string;
   suite: string;
@@ -12,8 +9,6 @@ interface Address {
   zipcode: string;
   geo: Geo;
 }
-
-// user.interface.ts
 export default interface User {
   id: number;
   name: string;
@@ -21,5 +16,4 @@ export default interface User {
   email: string;
   address: Address;
 }
-
 // Now you can use these interfaces in your Angular components or services.
