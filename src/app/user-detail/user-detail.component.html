@@ -1,5 +1,10 @@
 <div>
   <h2>{{ userInfo.name }}'s Info Dump</h2>
+  <img
+    src="https://robohash.org/{{ userInfo.name }}?size=200x200&set=set3"
+    alt="User's Image"
+  />
+  <br />
   <i>Username:</i> {{ userInfo.username }} <br />
   <i>User Email:</i> {{ userInfo.email.toLocaleLowerCase() }} <br />
   <i>User's Address:</i> {{ userInfo.address.suite }}
