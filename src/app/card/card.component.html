@@ -1,6 +1,9 @@
 <div>
+  <app-search (searchTextChange)="onSearchTextEntered($event)"></app-search>
   <ul *ngFor="let user of users | async">
-    <li>
+    <li
+      *ngIf="searchText === '' || user.name.toLowerCase().includes(searchText)"
+    >
       <img src="" alt="user image" /> <br />
       {{ user.name }} <br />
       {{ user.email.toLocaleLowerCase() }} <br />

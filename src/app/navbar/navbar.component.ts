@@ -13,7 +13,7 @@ export class NavbarComponent {
   // create array of paths to be displayed in nav bar component.
   links: any = [
     { path: 'home', label: 'Home' },
-    { path: 'users', label: 'User List' },
+    { path: 'users', label: 'Users' },
     // add more as necessary
   ];
 }
