@@ -1,0 +1,71 @@
+.part1 {
+    /* display: flex; */
+    height: 25vh;
+    width: 100%;
+    /* flex-direction: row; */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../../assets/user-details-assets/user-details-header.jpg');
+  }
+  
+  .profile-picture {
+    width: 190px; 
+    height: 190px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin: 0 auto; 
+    margin-bottom: 10px; 
+    background-size: cover;
+    background-color: rgb(212, 220, 227);
+    position: absolute;
+    top: 130px;
+    left: 80px;
+    border: 10px solid white;
+               
+  }
+  
+  .profile-picture img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }  
+  section{
+      display: flex;
+      flex-direction: row;
+      /* height: 75vh; */
+  }
+  #section-left, #section-right{
+      /* height: 75vh; */
+      width: 50vw;
+  }
+  #name-info{
+      padding: 65px 0 0 80px;
+      border-bottom: 2px solid gray;
+  }
+  #company-info{
+      padding: 5px 30px 15px 40px ;
+      margin-bottom: 15px;
+      
+  }
+  #section-right{
+      padding: 15px 29px 15px 29px ;
+      border-left: 2px solid gray;
+       
+  }
+  #section-right h4, #section-right p{
+      color: rgb(22, 74, 135);
+  }
+  #company-info h4, #company-info p{
+      color: rgb(22, 74, 135);
+  }
+  #company-details{
+      display: flex;
+      flex-direction: row;
+  }
+  #company-img-small img{
+      width: 90px; 
+      height: 90px; 
+      border-radius: 50%;
+      margin-right: 24px;
+  }
