@@ -1,9 +1,16 @@
-<div>
-  <span>Search:</span>
-  <input
+<div class="search-section">
+  <div class="user-list">
+  <h3>User List</h3>
+  
+  <div class="search">
+    <input
     type="text"
     [(ngModel)]="enteredSearchValue"
     (input)="onSearchTextChanged()"
-    placeholder="Enter User's Name"
+    placeholder="Search users"
   />
+  <i class="fa-solid fa-sliders fa-2x"></i>
+  </div>
+</div>
+  
 </div>
