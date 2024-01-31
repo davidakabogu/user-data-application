@@ -9,7 +9,7 @@ interface Address {
   zipcode: string;
   geo: Geo;
 }
-interface Company{
+interface Company {
   name: string;
   catchPhrase: string;
   bs: string;

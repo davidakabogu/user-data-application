@@ -1,11 +1,5 @@
-import {
-  Component,
-  EventEmitter,
-  NgModule,
-  OnInit,
-  Output,
-} from '@angular/core';
-import { FormsModule, NgModel } from '@angular/forms';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-search',
