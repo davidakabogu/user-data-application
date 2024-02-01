@@ -39,7 +39,13 @@
 }
 .card:hover {
     background-color: rgba(11, 11, 104, 0.87);
+    color: #ffffff;
+    stroke: white;
 }
 .card-title {
     margin-top: 10px;
 }
+
+.card:hover .card-body .stroke-hover {
+    stroke: white;
+  }
