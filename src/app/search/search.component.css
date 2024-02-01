@@ -1,0 +1,43 @@
+.search-section{
+    margin-left: 80px;
+    margin-bottom: 15px;
+}
+
+.search{
+    margin-right: 10px;
+   margin-bottom: 25px;
+   position: relative;
+}
+
+input{
+    width: 40%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+input:hover{
+    background-color: turquoise;
+}
+
+.search input{
+    padding: 10px;
+    
+}
+
+input::placeholder{
+    padding-left: 15px;
+
+}
+
+ .fa-solid {
+    margin-left: 15px;
+    width: 50px;
+    padding-top: 10px;
+  position: absolute;
+  padding-top: 4.5px;
+  margin-bottom: 0px;
+  
+}
+
+
+
