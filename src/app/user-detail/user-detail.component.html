@@ -1,62 +1,68 @@
-<section>
-  <div class="part1">
-    <div class="profile-picture">
-      <img
-        src="https://robohash.org/{{ userInfo.name }}?size=200x200&set=set3"
-        alt="Profile Picture"
-      />
-    </div>
-  </div>
-</section>
-<section>
-  <div id="section-left">
-    <div id="name-info">
-      <h2>{{ userInfo.name }}</h2>
-      <h4>{{ userInfo.address.city }}, {{ userInfo.address.zipcode }}.</h4>
-      <p>{{ userInfo.email.toLocaleLowerCase() }}</p>
-      <br />
-    </div>
-    <div id="company-info">
-      <h4>Company</h4>
-      <div id="company-details">
-        <div id="company-img-small">
-          <img
-            src="https://robohash.org/{{ userInfo.name }}?size=200x200&set=set3"
-            alt="mini-image"
-          />
+<div>
+    <section>
+        <div class="part1">
+          <div class="profile-picture">
+            <img
+              src="https://robohash.org/{{ userInfo.name }}?size=200x200&set=set3"
+              alt=""
+              class="img-fluid"
+            />
+            
+          </div>
         </div>
-        <div>
-          <p>{{ userInfo.company.name }}</p>
-          <p>{{ userInfo.company.catchPhrase }}</p>
+      </section>
+      <section>
+        <div id="section-left">
+          <div id="name-info">
+            <h2>{{ userInfo.name }}</h2>
+            <h4>{{ userInfo.address.street }}, {{ userInfo.address.city }}.</h4>
+            <a href="#" ><p><em><i class="fa-solid fa-link"></i> https://{{ userInfo.email.toLocaleLowerCase() }}/{{userInfo.username}}</em></p></a>
+        
+          </div>
+          <div id="company-info">
+            <h4>Company</h4>
+            <div id="company-details"  class="d-flex" >
+             
+              <div id="company-img-small">
+                <img
+                  src="https://robohash.org/{{ userInfo.name }}?size=200x200&set=set3"
+                  alt="mini-image"
+                />
+              </div>
+              <div id="company-name-deets">
+                <h5>{{ userInfo.company.name }}</h5>
+                <p>{{ userInfo.company.bs }}</p>      
+                <p class="fs-6 text-body-secondary font-monospace">January 2024 - present</p>
+              </div>
+            </div>
+            <p id="abt-company" class="text-body-secondary">About Company</p>
+            <p class="text-body-secondary">
+              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+              tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrum exercitationem corporis laboriosam
+            </p>
+            
+          </div>
         </div>
-      </div>
-      <br />
-      <h4>About Company</h4>
-      <p>{{ userInfo.company.bs }}</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-        tempor incidunt ut labore et dolore magna aliqua.
-      </p>
-      <p></p>
-    </div>
-  </div>
-
-  <div id="section-right">
-    <h4>About {{ userInfo.name }}</h4>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
-      incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
-      ex ea commodi consequatur.
-    </p>
-    <br />
-    <br />
-    <h4>Contact Info</h4>
-    <p>
-      {{ userInfo.address.suite }}, {{ userInfo.address.street }},
-      {{ userInfo.address.city }}
-    </p>
-    <p>www.{{ userInfo.email.toLocaleLowerCase() }}</p>
-    <p>{{ userInfo.phone }}</p>
-  </div>
-</section>
+      
+        <div id="section-right">
+          <h4><i class="fa-solid fa-circle-info"></i>  About</h4>
+          <p class="text-body-secondary">
+            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
+            incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
+            ex ea commodi consequatur.
+          </p>
+          <br />
+          <br />
+          <h4>Contact Info</h4>
+          <p class="text-body-secondary"><i class="fa-solid fa-location-dot"></i>     
+            {{ userInfo.address.suite }}, {{ userInfo.address.street }},
+            {{ userInfo.address.city }}
+          </p>
+          <p class="text-body-secondary"><i class="fa-regular fa-envelope"></i>     www.{{ userInfo.email.toLocaleLowerCase() }}</p>
+          <p class="text-body-secondary"><i class="fa-solid fa-phone"></i>     {{ userInfo.phone }}</p>
+        </div>
+      </section>
+      
+</div>
