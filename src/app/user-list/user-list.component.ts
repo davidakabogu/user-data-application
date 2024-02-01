@@ -1,11 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { CardComponent } from '../card/card.component';
 import { UserService } from '../services/user.service';
-import { Observable } from 'rxjs';
 import User from '../models/user';
 import { AsyncPipe, NgFor } from '@angular/common';
 import { SearchComponent } from '../search/search.component';
-
 
 @Component({
   selector: 'app-user-list',

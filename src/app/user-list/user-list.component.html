@@ -1,8 +1,8 @@
 <app-search (searchTextChange)="searchValue = $event" />
 <div class="flex-container">
-  <app-card 
+  <app-card
     *ngFor="let user of getFilteredUsers(); trackBy: trackUser"
-    [user]="user">
+    [user]="user"
+  >
   </app-card>
- 
 </div>

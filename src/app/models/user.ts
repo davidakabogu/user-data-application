@@ -24,4 +24,3 @@ export default interface User {
   website: string;
   company: Company;
 }
-// Now you can use these interfaces in your Angular components or services.
