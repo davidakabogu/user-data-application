@@ -1,27 +1,20 @@
-<app-search (searchTextChange)="onSearchTextEntered($event)"></app-search>
-<div class="robo-container">
-  <div *ngFor="let user of users | async" class="robo-family">
-    <div
-      *ngIf="searchText === '' || user.name.toLowerCase().includes(searchText)"
-    >
+<div id="robo-component">
+  <div class="robo-container">
+    <div class="robo-family">
       <div class="robo-styling">
-        <div class="image-container">
+        <div class="robo-container-img">
           <img
-            src="https://robohash.org/{{ user.name }}?size=200x200&set=set3"
-            alt="user image"
+            src="https://robohash.org/{{ user.username }}?size=200x200&set=set3"
+            alt=""
           />
         </div>
-        <div class="user-details">
-          <br />
-          <div class="user-name">{{ user.name }} <br /></div>
-          <div class="user-email">
-            {{ user.email.toLocaleLowerCase() }} <br />
-          </div>
+        <div class="robo-container-word">
+          <h4>{{ user.name }}</h4>
+          <p>{{ user.email.toLocaleLowerCase() }}</p>
         </div>
       </div>
-      <button routerLink="/users/:id" (click)="getUserInfo(user.id)">
-        View Details
-      </button>
+      <button class="btn" routerLink="/users/:id" (click)="getUserInfo(user.id)">View Details</button>
     </div>
   </div>
 </div>
+
