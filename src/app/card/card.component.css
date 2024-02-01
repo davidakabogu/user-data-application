@@ -1,0 +1,121 @@
+.robo-container {
+  box-sizing: border-box;
+  box-shadow: rgba(94, 90, 90, 0.35) 0px 3px 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.robo-styling {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.robo-container-img img {
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px 2px #808080;
+  display: flex;
+  margin-top: 10px;
+  width: 80px;
+}
+
+.robo-container-word {
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-top: 17px;
+}
+
+.robo-container-word h4 {
+  margin-bottom: 0px;
+  font-size: 1.1em;
+}
+
+.robo-container p {
+  margin-top: 2px;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 1000px) {
+  .new-image {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .new-image img {
+    width: 180px;
+    height: 200px;
+  }
+}
+
+.robo-family {
+  background-color: #f5f5dc;
+}
+
+.btn {
+  margin-left: 22px;
+  margin-bottom: 40px;
+  padding: 5px 4px !important;
+  border-radius: 10px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 30%;
+  font-size: 0.8em !important;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  background: none;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.btn {
+  color: #fdfbfb;
+}
+
+.btn:hover {
+  color: #01080d;
+  background-color: #808080;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  transition: 0.8s;
+  background-color: rgb(5, 5, 98);
+}
+
+.btn::before {
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+  background-color: rgb(5, 5, 98);
+}
+
+.btn::before {
+  height: 180%;
+}
+
+.btn:hover::before {
+  height: 0%;
+}
+
+#robo-component:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+#robo-component {
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin: 6px;
+}
