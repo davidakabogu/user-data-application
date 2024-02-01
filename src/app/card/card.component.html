@@ -13,8 +13,13 @@
           <p>{{ user.email.toLocaleLowerCase() }}</p>
         </div>
       </div>
-      <button class="btn" routerLink="/users/:id" (click)="getUserInfo(user.id)">View Details</button>
+      <button
+        class="btn"
+        routerLink="/users/:id"
+        (click)="getUserInfo(user.id)"
+      >
+        View Details
+      </button>
     </div>
   </div>
 </div>
-
